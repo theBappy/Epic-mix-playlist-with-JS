@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "B612", sans-serif;
+    background-color: darkcyan;
+    color: white;
+    font-size: 1rem;
+}
+h1{
+    width: 100%;
+    padding-top: 1em;
+    font-size: 3em;
+    text-align: center;
+    font-family: "Archivo", sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 800px;
+}
+.mix{
+    padding: 0 3em;
+    margin: 0;
+    list-style: none;
+    border: 2px solid white;
+}
+.hide{
+    display: none;
+}
+.total{
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+.mix .song{
+    padding: 0.5em;
+    margin: 0.75em 0;
+    font-size: 1.25em;
+}
+.mix .song-number{
+    display: inline-block;
+    padding: 0.45em;
+    margin-right: 0.25em;
+    background-color: rgb(73, 168, 168);
+}
+button.show-list{
+    margin: 2em 0;
+    width: 50%;
+    padding: 1em;
+    color: darkcyan;
+    font-size: 1.25em;
+    align-self: center;
+}
+@media screen and (max-width: 800px){
+    .mix .song{
+        width: 50%;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    button.show-list{
+        width: 25%;
+        font-size: 1.5em;
+    }
+}
